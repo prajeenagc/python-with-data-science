@@ -29,3 +29,4 @@ print(arr5.reshape(6,2))
 print(arr5.reshape(2,6))
 print(arr5.reshape(3,4))
 print(arr5.reshape(4,3))
+

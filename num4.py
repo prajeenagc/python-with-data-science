@@ -44,7 +44,45 @@ for x in a1:
 res=np.where(a1>2,"High","Low")
 # print(res)
 
-print(np.sum(a1))
-print(np.max(a1))
-print(np.min(a1))
-print(a1!=3)
+# print(np.sum(a1))
+# print(np.max(a1))
+# print(np.min(a1))
+# print(a1!=3)
+
+
+arr10=np.array([10.45,20.67,30,40,50])
+# print(arr10)
+# print(np.add(arr10,5))
+# print(np.subtract(arr10,3))
+# print(np.multiply(arr10,3))
+# print(np.divide(arr10,2))
+# print(arr10//3)
+# print(arr10%3)
+# print(arr10**2)
+# print(np.sqrt(arr10))
+# print(np.abs(arr10))
+# print(np.round(arr10).astype(int))
+angles=np.array([0,90,180,360])
+# print(np.sin(angles))
+# print(np.cos(angles))
+
+print(np.mean(arr10))
+print(np.median(arr10))
+print(np.std(arr10))
+print(np.max(arr10)-np.min(arr10))
+
+arr2=np.array([
+    [10,20,30],
+    [40,50,60]
+])
+
+print(np.sum(arr2,axis=0))
+print(np.mean(arr2, axis=0))
+print(np.mean(arr2, axis=1))
+
+#percentile is a value, below which a given percentage of data falls
+
+arrp=np.array([10,14,17,25,40,60,45,30,100,90,80,70,40,50])
+print(np.percentile(arrp,25))
+# means ... % value are lesser than 50
+print(np.quantile(arrp,0.25))
